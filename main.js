@@ -26,3 +26,12 @@ for (i = 1; i < dataArray.length; i++) {
 
   dataObjects.push(rowObjects);
 }
+dataObjects.pop();
+
+dataObjects.splice(1, 0, {
+  id: "48",
+  name: "Barry",
+  occupation: "Runner",
+  age: "25",
+});
+dataObjects.push({ id: "7", name: "Bilbo", occupation: "None", age: "111" });
