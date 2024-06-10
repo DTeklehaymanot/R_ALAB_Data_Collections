@@ -32,6 +32,15 @@ dataObjects.splice(1, 0, {
   id: "48",
   name: "Barry",
   occupation: "Runner",
-  age: "25",
+  age: 25,
 });
-dataObjects.push({ id: "7", name: "Bilbo", occupation: "None", age: "111" });
+dataObjects.push({ id: "7", name: "Bilbo", occupation: "None", age: 111 });
+
+let sumAge = 0;
+
+for (let i = 0; i < dataObjects.length; i++) {
+  const age = dataObjects[i]["age"];
+  let integerAge = parseFloat(age);
+  sumAge += integerAge;
+}
+console.log(sumAge);
